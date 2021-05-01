@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap links -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+    <title>Covid-19 Tracker</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="container">
+     <nav class="navbar navbar-expand-lg navbar-light p-1">
+          <a class="navbar-brand text-white">COVID-19 TRACKER</a>
+      </nav>
+    </div>
+    <div class="center-header h-100 w-100 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="text-white">
+            Live Covid cases tracker For India
+        </h1>
+        <p class="text-white">
+            stay Home stay Safe
+        </p>
+    </div>
+    </div>
+    <div class="container total-section mt-3">
+   <p class="text-center"> This website includes all data form 30 January 2020 to</p>
+        <h3 class="text-center " id="update-time">
+            India's Last Updated Time
+        </h3>
+        
+               <div class="row">
+                   <div class="col-6 col-lg-3 col-md-6 text-center">
+                       <div  class="info-divs  bg-success text-center text-white shadow">
+                        <h3>Active</h3>
+                        <p id="total" ></p>
+                       </div> 
+                   </div>
+                   <div class="col-6 col-lg-3 col-md-6 text-center">
+                    <div class="info-divs  bg-warning text-center text-white shadow">
+                       <h3>Confirmed</h3>
+                       <p id="confirmed"></p>
+                    </div>
+                   </div>
+                   <div class="col-6 col-lg-3 col-md-6 text-center">
+                    <div class="info-divs  bg-danger text-center text-white shadow">
+                        <h3>Deaths</h3>
+                        <p id="deaths"></p>
+                        </div>
+                   </div>
+                   <div class="col-6 col-lg-3 col-md-6 text-center">
+                    <div class="info-divs bg-primary text-center text-white shadow">
+                         <h2>Recovered</h2>
+                         <p id="recovered"></p>
+                    </div>
+                   </div>
+               </div>
+           
+    </div>
+    <!-- Table sections -->
+    <div class="container mt-5 table-responsive-md">
+        <h3 class="text-center">State Wise Information</h3>
+        <table class="table mt-1 shadow table-bordered table-responsive-md">
+            <thead class="thead-light border-1 text-center">
+                <tr>
+                    <th class="bg-primary text-white">Last Time Updated </th>
+                    <th class="bg-secondary text-white">State </th>
+                    <th class="bg-warning text-white">Active cases </th>
+                    <th class="bg-danger text-white">Confirmed Cases</th>
+                    <th class="bg-dark text-white">Deaths</th>
+                    <th class="bg-primary text-white">Migrated Other</th>
+                    <th class="bg-success text-white">Recovered</th>
+                </tr>
+            </thead>
+            <tbody class=" text-center" id="tbody">
+               
+            </tbody>
+        
+        </table>
+    </div>
+    <div class="container mt-5">
+        <h3 class="text-center">Covid-19 prevention</h3>
+        <div class="row  mt-3">
+            <div class="col-12 col-md-4">
+            <div class=" card m-1 shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Wash your hands</h5>
+                    <p class="card-text">Clean your hands often. Use soap and water, or an alcohol-based hand rub.</p>
+                </div>
+              
+            </div> 
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card m-1 shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Keep a safe distance</h5>
+                    <p class="card-text">Maintain a safe distance from anyone who is coughing or sneezing.</p>
+                </div>
+              </div>
+             
+            </div>
+             <div class="col-12 col-md-4">
+                 <div class="card m-1 shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Wear a face cover</h5>
+                    <p class="card-text">Wear a mask when physical distancing is not possible.</p>
+                </div>
+              
+            </div>
+        </div>
+
+            
+        </div>
+        <div class="text-center mt-5">
+            <a class="btn btn-outline-danger shadow" href="https://www.mohfw.gov.in/">source</a>
+        </div>
+    </div>
+    <div class="container-fluid mt-4 bg-dark text-white text-center">
+        <h5 class="p-4">Designed and developed By Gazi Fayaz</h5>
+    </div>
+ 
+<!-- b5 js links -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
